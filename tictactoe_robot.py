@@ -23,7 +23,6 @@ def CoortoArry (coor = []):
             a = i + 1
     return a
 
-
 # Movement - Fundamental
 
 def step_forward():
@@ -40,7 +39,6 @@ def turn_around():
 
 def turn_left():
     turnBy(90)
-
 
 # Movement - Applied
 
@@ -114,8 +112,7 @@ def move_to_position(x, y): #!!
     robot_position = [x, y]
     return robot_position
 
-
-## Scan current board if current board state is unknown
+# Scan current board if current board state is unknown
 
 def scan(position):
     global theBoard
@@ -130,7 +127,6 @@ def scan(position):
             return 0
     else:
          return 0
-
 
 # Full board scan
 
@@ -228,12 +224,13 @@ def isBoardFull(board):
              return False
      return True
 
-
-##MAIN
+########
+# MAIN #
+########
 
 print('Welcome to Tic Tac Toe!')
 
-## Initial variables
+# Initial variables
 
 robot_position = [1, 1]
 robot_direction = 0
@@ -243,7 +240,7 @@ print('The ' + turn + ' will go first.')
 gameIsPlaying = True
 Win, Tie, Lose = False, False, False
     
-    ## Gameplay
+# Gameplay
 
 while gameIsPlaying:
     if turn == 'player':
